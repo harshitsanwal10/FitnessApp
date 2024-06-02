@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymMania</title>
+    <link rel="icon" type="image/png" href="assets/fitness.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .decoration {
+            text-decoration: underline;
+        }
+
+        .parent {
+            background-color: #12debb;
+        }
+
+        .child {
+            background-color: #f9e7f6;
+        }
+
+        .child1 {
+            background-color: black;
+        }
+
+        .child2 {
+            background-color: #d8d9da;
+        }
+
+        .child3 {
+            background-color: white;
+        }
+
+        .hero {
+            background-color: #d8d9da;
+        }
+
+        footer {
+            width: 100%;
+            background: linear-gradient(to right, #00093c, #2d0b00);
+            color: #fff;
+            line-height: 20px;
+            font-size: 13px;
+            padding: 50px 0 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0 20px;
+        }
+
+        .footer-column {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer-column img {
+            width: 80px;
+            height: auto;
+        }
+
+        .footer-column p {
+            margin: 10px 0;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #fff;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="w-full p-5">
+        <nav class="flex items-center justify-between w-full">
+            <img class="w-17 h-20" src="assets/GymManiaimg-removebg-preview.png" alt="Gym Mania">
+            <ul class="flex space-x-4 lg:space-x-12 items-center ml-auto mr-5 lg:mr-20">
+                <li><a href="#"
+                        class="text-blue-800 font-medium text-sm lg:text-lg hover:text-black decoration-2 decoration">Home</a>
+                </li>
+                <li><a href="BMI.html" class="text-blue-800 font-medium text-sm lg:text-lg hover:text-black">BMI</a>
+                </li>
+                <li><a href="#" class="text-blue-800 font-medium text-sm lg:text-lg hover:text-black">Workout</a></li>
+                <li><a href="#" class="text-blue-800 font-medium text-sm lg:text-lg hover:text-black">Diet</a></li>
+                <li>
+                    <button class="bg-blue-500 text-white px-3 lg:px-4 py-2 rounded hover:bg-blue-600">Log in</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <hr class="border-gray-350">
+    <div class="parent w-full h-auto lg:h-[37rem] flex flex-col lg:flex-row items-center lg:items-start p-5 lg:p-10">
+        <div class="w-full lg:w-1/2 lg:ml-10 font-medium text-center lg:text-left mb-5 lg:mb-0 mt-40">
+            <h1 class="text-white text-3xl lg:text-5xl">Feel Great.</h1>
+            <h1 class="text-white text-3xl lg:text-5xl">Body and Mind.</h1>
+            <br>
+            <p class="text-white text-sm lg:text-base px-5 lg:px-0 font-bold">Choose from hundreds of workouts, healthy
+                recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.
+            </p>
+            <button class="text-white bg-black mt-6 lg:ml-0 w-40 rounded-lg h-10">JOIN NOW</button>
+        </div>
+        <div class="max-w-full lg:max-w-[40%]">
+            <img src="assets/customers.png" alt="Screenshot" class="max-w-full h-auto">
+        </div>
+    </div>
+    <div class="w-full flex flex-col lg:flex-row">
+        <div
+            class="child flex-1 flex flex-col items-center lg:items-start justify-center p-5 lg:p-10 mt-[1%] lg:ml-0 lg:mr-4">
+            <h1 class="text-4xl text-center lg:text-left">Workout Videos</h1>
+            <br>
+            <p class="text-base text-center lg:text-left">Exercise with certified personal trainers whether you’re at
+                home or on the road.</p>
+            <a class="text-blue-500 mt-5" href="#">Find a Workout</a>
+            <img class="mt-10" src="assets/workout.png">
+        </div>
+        <div class="child1 flex-1 flex flex-col items-center lg:items-start justify-center p-5 lg:p-10 mt-[1%] lg:ml-4">
+            <h1 class="text-4xl text-white text-center lg:text-left">Wellness Articles</h1>
+            <br>
+            <p class="text-base text-white text-center lg:text-left">Research-backed articles to help you care for your
+                body and mind.</p>
+            <a class="text-blue-500 mt-5" href="#">Learn from experts.</a>
+            <img class="mt-10" src="assets/Article.webp">
+        </div>
+    </div>
+    <div class="w-full flex flex-col lg:flex-row">
+        <div
+            class="child2 flex-1 flex flex-col items-center lg:items-start justify-center p-5 lg:p-10 mt-[1%] lg:ml-0 lg:mr-4">
+            <h1 class="text-4xl text-center lg:text-left">Healthy Recipes</h1>
+            <br>
+            <p class="text-base text-center lg:text-left">Fuel your day with recipes by Registered Dietitians and
+                professional chefs.</p>
+            <a class="text-blue-500 mt-5" href="#">Find a Recipe</a>
+            <img class="mt-10" src="assets/recipie.webp">
+        </div>
+        <div class="child3 flex-1 flex flex-col items-center lg:items-start justify-center p-5 lg:p-10 mt-[1%] lg:ml-4">
+            <h1 class="text-4xl text-black text-center lg:text-left">Supportive Community</h1>
+            <br>
+            <p class="text-base text-black text-center lg:text-left">Stay motivated and engaged with a little help from
+                a supportive community of other members.</p>
+            <a class="text-blue-500 mt-5" href="#">Become a member.</a>
+            <img class="mt-10" src="assets/community.webp">
+        </div>
+    </div>
+    <div class="hero w-full h-auto mt-10 flex justify-center p-10">
+        <div class="max-w-full lg:max-w-5xl">
+            <h1 class="text-4xl text-center">Not sure where to start?</h1>
+            <br>
+            <p class="text-center">Programs offer day-to-day guidance on an interactive calendar to keep you on track.
+            </p>
+            <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-4 mt-10">
+                <div class="card bg-white p-6 shadow-md rounded-lg mb-5 lg:mb-0" style="width: 20rem;">
+                    <img src="assets/card1.jpg" class="rounded-t-lg" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-xl font-bold mt-4">Card title</h5>
+                        <p class="card-text text-gray-700 mt-4 mb-6">Some quick example text to build on the card title
+                            and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary mt-6 bg-blue-500 text-white px-4 py-2 rounded">Go
+                            somewhere</a>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 shadow-md rounded-lg mb-5 lg:mb-0" style="width: 20rem;">
+                    <img src="assets/card2.jpg" class="rounded-t-lg" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-xl font-bold mt-4">Card title</h5>
+                        <p class="card-text text-gray-700 mt-4 mb-6">Some quick example text to build on the card title
+                            and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary mt-6 bg-blue-500 text-white px-4 py-2 rounded">Go
+                            somewhere</a>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 shadow-md rounded-lg" style="width: 20rem;">
+                    <img src="assets/card3.jpg" class="rounded-t-lg" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-xl font-bold mt-4">Card title</h5>
+                        <p class="card-text text-gray-700 mt-4 mb-6">Some quick example text to build on the card title
+                            and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary mt-6 bg-blue-500 text-white px-4 py-2 rounded">Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/GymManiaimg-removebg-preview.png" alt="">
+                <p>GymMania</p>
+                <p>WORKOUT COMPLETE™</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="font-bold mb-4">Fitness</h3>
+                <a href="#">Workouts</a>
+                <a href="#">Workout videos</a>
+                <a href="#">Custom Workouts</a>
+                <a href="#">Programs</a>
+                <a href="#">Workout programs</a>
+                <a href="#">Meal Plans</a>
+                <a href="#">Pilot Programs</a>
+                <a href="#">Routines</a>
+            </div>
+            <div class="footer-column">
+                <h3 class="font-bold mb-4">Nutrition</h3>
+                <a href="#">Workouts</a>
+                <a href="#">Workout videos</a>
+                <a href="#">Custom Workouts</a>
+                <a href="#">Programs</a>
+                <a href="#">Workout programs</a>
+                <a href="#">Meal Plans</a>
+                <a href="#">Pilot Programs</a>
+                <a href="#">Routines</a>
+            </div>
+            <div class="footer-column">
+                <h3 class="font-bold mb-4">Community</h3>
+                <a href="#">Workouts</a>
+                <a href="#">Workout videos</a>
+                <a href="#">Custom Workouts</a>
+                <a href="#">Programs</a>
+                <a href="#">Workout programs</a>
+                <a href="#">Meal Plans</a>
+                <a href="#">Pilot Programs</a>
+                <a href="#">Routines</a>
+            </div>
+            <div class="footer-column">
+                <h3 class="font-bold mb-4">About Us</h3>
+                <a href="#">Workouts</a>
+                <a href="#">Workout videos</a>
+                <a href="#">Custom Workouts</a>
+                <a href="#">Programs</a>
+                <a href="#">Workout programs</a>
+                <a href="#">Meal Plans</a>
+                <a href="#">Pilot Programs</a>
+                <a href="#">Routines</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
